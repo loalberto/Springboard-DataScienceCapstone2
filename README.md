@@ -11,12 +11,16 @@ Through the use of Exploratory Data Analysis I came to find that there were cert
 
 # Trying different models for price prediction:
 
-| Model             |      RMSE_train      |     RMSE_test   |  
-|-------------------|:--------------------:|----------------:|
-| Linear Regression |      1.268635        |    1.040149     |
-| Rdige Regression  |      1.275546        |    1.038297     |
-| Lasso Regresssion |      1.296831        |    1.033434     |
-
+| Model             | RMSE_train | RMSE_test | r2_train | r2_test | alpha | n_neighbors | max_depth | n_estimators |
+|-------------------|:----------:|----------:|---------:|--------:|------:|------------:|----------:|--------------|
+| Linear Regression |  1.268635  | 1.040149  | 0.604423 | 0.676428|  NaN  |     NaN     |    NaN    |      NaN     |
+| Rdige Regression  |  1.275546  | 1.038297  | 0.602268 | 0.677579|  0.1  |     NaN     |    NaN    |      NaN     | 
+| Lasso Regresssion |  1.296831  | 1.033434  | 1.296831 | 0.680592| 0.001 |     NaN     |    NaN    |      NaN     |
+| KNearest Neighbors|  0.749192  | 0.908528  | 0.766392 | 0.753136|  NaN  |      8      |    NaN    |      NaN     |
+|Single DecisionTree|  0.392672  | 0.832889  | 0.877560 | 0.792530|  NaN  |     NaN     |     7     |      NaN     |
+| Random Forest     |  0.246644  | 0.704695  | 0.923093 | 0.851480|  NaN  |     NaN     |     9     |       5      |
+| Gradient Boosting |  0.616607  | 0.942479  | 0.807734 | 0.734341|  NaN  |     NaN     |     9     |       9      |
+| Ada Boosting      |  0.785707  | 0.829604  | 0.755006 | 0.751886|  NaN  |     NaN     |    NaN    |       6      |
 
 
 
