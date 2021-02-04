@@ -11,9 +11,12 @@ Through the use of Exploratory Data Analysis I came to find that there were cert
 
 # Trying different models for price prediction:
 
-``` python
+| Model             |      RMSE_train      |     RMSE_test   |  
+|-------------------|:--------------------:|----------------:|
+| Linear Regression |      1.268635        |    1.040149     |
+| Rdige Regression  |      1.275546        |    1.038297     |
+| Lasso Regresssion |      1.296831        |    1.033434     |
 
-import pandas as pd
-df = pd.read_csv('Model_Metrics.csv')
-print(df)
-```
+
+
+
