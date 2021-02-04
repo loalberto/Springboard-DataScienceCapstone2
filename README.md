@@ -8,3 +8,12 @@ The problem I am trying to solve is the one about predicting a maximized hourly 
 
 # Feature Engineering:
 Through the use of Exploratory Data Analysis I came to find that there were certain features from the original data that had a better correlation to the total amount of a trip. These features include: trip_distance, fare_amount, tolls_amount, tip_amount. In addition, I included the pick up areas and the drop off areas as the locations also impacted how much money a trip would make.
+
+# Trying different models for price prediction:
+
+``` python
+
+import pandas as pd
+df = pd.read_csv('Model_Metrics.csv')
+print(df)
+```
